@@ -9,7 +9,7 @@ import co.micol.DAO.sellboardDAO;
 import co.micol.VO.sellboardVO;
 import co.micol.common.Command;
 
-public class SellList implements Command {
+public class sellList implements Command {
 
 	@Override
 	public String exec(HttpServletRequest request, HttpServletResponse response) {

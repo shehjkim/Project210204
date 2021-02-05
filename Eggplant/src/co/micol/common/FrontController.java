@@ -49,7 +49,7 @@ public class FrontController extends HttpServlet {
 		
 		
 		//현정
-//		map.put("/SellList.do", new SellList()); //판매리스트
+//		map.put("/sellList.do", new sellList()); //판매리스트
 //		map.put("/SellView.do", new phoneSellView()); //상세리스트
 //		map.put("/phoneSellInsert.do", new phoneSellInsert()); //새글등록
 //		map.put("/SellUpdateForm.do", new SellUpdateForm()); // 글수정
