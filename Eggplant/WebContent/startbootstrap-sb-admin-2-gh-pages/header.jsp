@@ -14,14 +14,14 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="startbootstrap-sb-admin-2-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.css" rel="stylesheet">
-
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -33,7 +33,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="main.do">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-19">
                     <i class="fas fa-pepper-hot"></i>
                 </div>
@@ -62,10 +62,10 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="insertText.do" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>판매글 작성</span>
+                    <span>게시글</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -75,20 +75,7 @@
                     </div>
                 </div>
             </li>
-			<li class="nav-item">
-                <a class="nav-link collapsed" href="textView.do" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>판매글 조회</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">게시글작성</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -152,9 +139,19 @@
             
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="member.jsp">
                     <i class="fas fa-fw fa-table"></i>
                     <span>회원목록</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.jsp">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>제품목록</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.jsp">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>공지사항</span></a>
             </li>
 
             <!-- Divider -->
@@ -381,12 +378,9 @@
                         </li>
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <div style="padding-top: 20px;">
-                            <a class="collapse-item" href="loginForm.do" >로그인</a>
+                            <a class="collapse-item" href="login.jsp" >로그인</a>
                         </div>
                             <div class="topbar-divider d-none d-sm-block"></div>
-                        <div style="padding-top: 20px;">
-                            <a class="collapse-item" href="signUpForm.do">회원가입</a>
-                        </div>
                     </ul>
 
                 </nav>
