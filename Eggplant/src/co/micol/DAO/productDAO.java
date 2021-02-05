@@ -79,6 +79,7 @@ public class productDAO extends DAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
+			
 		} catch (Exception e) {
 		} finally {
 			close();
