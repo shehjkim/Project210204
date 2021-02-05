@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import co.micol.sell.SellList;
+
+
 
 @WebServlet("/FrontController")
 public class FrontController extends HttpServlet {
@@ -25,6 +28,20 @@ public class FrontController extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		map.put("/loading.do", new Loading());
 		map.put("/loginForm.do", new LoginForm());
+		
+		
+		
+		//현정
+		map.put("/SellList.do", new SellList()); //판매리스트
+//		map.put("/SellView.do", new phoneSellView()); //상세리스트
+//		map.put("/phoneSellInsert.do", new phoneSellInsert()); //새글등록
+//		map.put("/SellUpdateForm.do", new SellUpdateForm()); // 글수정
+//		map.put("/SellDelete.do", new SellDelete()); // 글삭제
+//		map.put("/", new ());
+//		map.put("/", new ());
+//		map.put("/", new ());
+//		map.put("/", new ());
+		
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
